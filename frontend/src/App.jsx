@@ -54,7 +54,7 @@ const App = () => {
   return (
     <div className="App">
       <h1>My Task List</h1>
-      <TaskForm onTaskCreated={fetchTasks} />
+      <TaskForm onTaskCreated={fetchTasks} taskFunc={addTask}/>
       <HomePage tasks={tasks} refreshTasks={setTasks} />
     </div>
   );
